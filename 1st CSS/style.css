@@ -1,0 +1,108 @@
+* {
+    --st-color:hsl(31, 77%, 52%);
+    --sc-color:hsl(184, 100%, 22%); 
+    --en-color:hsl(179, 100%, 13%); 
+    margin: 0;
+    padding: 2rem;
+    box-sizing: border-box;
+}
+/* @import url('https://fonts.google.com/specimen/Big+Shoulders+Display'); */
+body{
+    width: 98%;
+    height: 98%;
+    background-color: aliceblue;
+    display: flex;    
+}
+img {
+    margin-bottom: 2rem;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center
+    flex-direction: row;
+    box-sizing: border-box;
+    border: 0px solid transparent;
+    border-radius: 50px;
+    -webkit-flex-direction: row;
+    flex-wrap: wrap
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+    
+}
+.First{
+    width:calc( 90% / 3);
+    background-color: var(--st-color);
+    height: 90%;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.Second{
+    width: calc(90% / 3);
+    background-color: var(--sc-color);
+    height: 90%;
+}
+.Third{
+    width: calc(90% / 3);
+    background-color: var(--en-color);
+    height: 90%;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+h1{
+    color:  hsl(0, 0%, 95%);
+    font-family:'Big Shoulders Display' , monospace;
+    text-transform: uppercase;
+    font-size: 40px;
+    margin-top: -5rem;
+}
+.first , .second , .third{
+    padding: 30px 15px 5px 30px;    
+}
+p{
+    font-size: 15px;
+    color:  hsla(0, 0%, 100%, 0.75);
+    font-family: 'Lexend Deca';
+    overflow: auto;
+    padding-top: 30%;
+    margin-top: -4rem;
+}
+button{
+    background-color: #fff;
+    padding: 10px;
+    font-family: 'Lexend Deca';
+    border-radius: 60px;
+    -webkit-border-radius: 60px;
+    -moz-border-radius: 60px;
+    -ms-border-radius: 60px;
+    -o-border-radius: 60px;
+    border: 1px solid whitesmoke;
+    margin-bottom: 2rem;
+    width: 80%;
+}
+
+@media only screen and (min-width: 1000px) {
+
+    main {
+        width: 100%;
+        max-width: 920px;
+        display: flex;
+        justify-content: center;
+        align-items: center
+    }
+
+    p {
+        margin-bottom: 6.1rem;
+    }
+
+    .First {
+        border-radius: 10px 0 0 10px;
+    }
+
+    .Third{
+        border-radius: 0 10px 10px 0;
+    }
+    
